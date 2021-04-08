@@ -6,7 +6,9 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 body header {
@@ -17,6 +19,7 @@ body header {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 70px 20px 32px;
+  margin-bottom: 30px;
 }
 
 body header .button {
@@ -79,11 +82,9 @@ body header .search #input_search {
   border: none;
   outline: none;
   padding: 12px 23px;
-  font-family: Mulish;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 20px;
+  width: 100%;
+  font-family: Mulish;
 }
 
 body header .search .button_search {
@@ -124,5 +125,126 @@ body header .user .user_avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+body .sidebar {
+  line-height: 20px;
+  margin-left: 32px;
+}
+
+body .sidebar .navigation .nav_menu {
+  padding: 0;
+  margin: 0 0 60px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item {
+  list-style: none;
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .nav_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #898989;
+  fill: #898989;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .nav_link:hover {
+  color: #FF0000;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .nav_link .nav_text .nav_images {
+  margin-right: 20px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .setting_link {
+  color: #C2C2C2;
+  fill: #C2C2C2;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .setting_link:hover {
+  color: #000000;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon:hover {
+  color: #FF0000;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .nav_images {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .nav_text {
+  margin-left: 13px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon_home {
+  width: 20px;
+  height: 19px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon_tranding {
+  width: 16px;
+  height: 21px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon_subscriptions {
+  width: 18px;
+  height: 18px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon_library {
+  width: 20px;
+  height: 16px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon_history {
+  width: 20px;
+  height: 18px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon_watch {
+  width: 17px;
+  height: 19px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon_favourites {
+  width: 19px;
+  height: 18px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon_like {
+  width: 18px;
+  height: 17px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon_music {
+  width: 18px;
+  height: 20px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon_games {
+  width: 22px;
+  height: 16px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon_showmore {
+  width: 14px;
+  height: 8px;
+}
+
+body .sidebar .navigation .nav_menu .nav_item .icon_setting {
+  width: 19px;
+  height: 20px;
 }
 /*# sourceMappingURL=style.css.map */

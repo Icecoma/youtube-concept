@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     header{
         display: flex;
         align-items: center;
         padding: 20px 70px 20px 32px;
+        margin-bottom: 30px;
         .button{
             padding: 0;
             display: flex;
@@ -51,11 +54,9 @@ body{
             border: none;
             outline: none;
             padding: 12px 23px;
-            font-family: Mulish;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
             line-height: 20px;
+            width: 100%;
+            font-family: Mulish
         }
         .button_search{
             height: 19px;
@@ -91,4 +92,102 @@ body{
         }
     }
     }
+    .sidebar{
+        line-height: 20px; 
+        margin-left: 32px;
+        .navigation{
+            .nav_menu{
+                padding: 0;
+                margin: 0 0 60px;
+                .nav_item{
+                    list-style: none;
+                    margin-bottom: 28px;
+                    display: flex;
+                    align-items: center;
+                    .nav_link{
+                        display: flex;
+                        text-decoration: none;
+                        color: #898989;
+                        fill: #898989;
+                        &:hover{
+                            color: #FF0000;
+                        }
+                        .nav_text{
+                            .nav_images{
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                    .setting_link{
+                        color: #C2C2C2;
+                        fill: #C2C2C2;
+                        &:hover{
+                            color: #000000;
+                        }
+                    }
+                    .icon:hover{
+                        color: #FF0000;
+                    }
+                    .nav_images{
+                        width: 26px;
+                        height: 26px;
+                        border-radius: 50%;
+                    }
+                    .nav_text{
+                        margin-left: 13px;
+                    }
+                    .icon_home{
+                        width: 20px;
+                        height: 19px;
+                    }
+                    .icon_tranding{
+                        width: 16px;
+                        height: 21px;
+                    }
+                    .icon_subscriptions{
+                       width: 18px;
+                       height: 18px; 
+                    }
+                    .icon_library{
+                        width: 20px;
+                        height: 16px; 
+                    }
+                    .icon_history{
+                        width: 20px;
+                        height: 18px; 
+                    }
+                    .icon_watch{
+                        width: 17px;
+                        height: 19px; 
+                    }
+                    .icon_favourites{
+                        width: 19px;
+                        height: 18px; 
+                    }
+                    .icon_like{
+                        width: 18px;
+                        height: 17px; 
+                    }
+                    .icon_music{
+                        width: 18px;
+                        height: 20px; 
+                    }
+                    .icon_games{
+                        width: 22px;
+                        height: 16px; 
+                    }
+                    .icon_showmore{
+                        width: 14px;
+                        height: 8px;
+                    }
+                    .icon_setting{
+                      width: 19px; 
+                      height: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+
 }
