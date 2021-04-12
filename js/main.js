@@ -77,5 +77,14 @@ const swiper = new Swiper('.sub_slider', {
       nextEl: '.fdswiper_button_next',
       prevEl: '.fdswiper_button_prev',
     },
-  
   });
+const searchBtn = document.querySelector('.mobile_search');
+const mobileSearch = document.querySelector('.search')
+searchBtn.addEventListener('click', () => {
+  mobileSearch.classList.toggle('is_open');
+});
+if (document.documentElement.scrollWidth <= 640) {
+  swiper.destroy();
+  swiper2.destroy();
+  swiper3.destroy();
+}

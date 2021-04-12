@@ -715,12 +715,6 @@ body .content .food_drink .fooddrink_slider .swiper-wrapper .swiper-slide .video
   body header .rightmenu {
     display: none;
   }
-  body header .search {
-    display: none;
-  }
-  body header .mobile_search {
-    display: block;
-  }
   body .sidebar {
     display: none;
   }
@@ -801,6 +795,7 @@ body .content .food_drink .fooddrink_slider .swiper-wrapper .swiper-slide .video
     margin-top: 5vh;
     padding-left: 15px;
     margin-left: 9vw;
+    margin-bottom: 65px;
   }
   body .content .subscriptions .sub_slider .swiper-wrapper .swiper-slide .video_card {
     width: 76vw;
@@ -852,7 +847,7 @@ body .content .food_drink .fooddrink_slider .swiper-wrapper .swiper-slide .video
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 640px) {
   body {
     overflow-x: hidden;
   }
@@ -863,16 +858,40 @@ body .content .food_drink .fooddrink_slider .swiper-wrapper .swiper-slide .video
     display: none;
   }
   body header .user {
-    margin-left: auto;
+    margin-left: 20px;
   }
   body header .rightmenu {
     display: none;
   }
   body header .search {
-    display: none;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    opacity: 0;
+    width: 67%;
+    margin-left: 25px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  body header .search.is_open {
+    top: 20px;
+    opacity: 1;
   }
   body header .mobile_search {
     display: block;
+    margin-left: auto;
+  }
+  body header .mobile_search .button_search {
+    height: 19px;
+    width: 19px;
+    border: none;
+    background: transparent;
+    padding: 0px;
+    cursor: pointer;
+    outline: none;
+  }
+  body header .mobile_search .button_search .icon_search {
+    fill: #000;
   }
   body .sidebar {
     display: none;
@@ -955,6 +974,24 @@ body .content .food_drink .fooddrink_slider .swiper-wrapper .swiper-slide .video
     padding-left: 15px;
     margin-left: 9vw;
   }
+  body .content .subscriptions .sub_title .slider_buttons {
+    display: none;
+  }
+  body .content .subscriptions .sub_slider {
+    margin-bottom: 20px;
+  }
+  body .content .subscriptions .sub_slider .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .content .subscriptions .sub_slider .swiper-wrapper .swiper-slide {
+    margin-bottom: 40px;
+  }
   body .content .subscriptions .sub_slider .swiper-wrapper .swiper-slide .video_card {
     width: 76vw;
     height: auto;
@@ -969,6 +1006,24 @@ body .content .food_drink .fooddrink_slider .swiper-wrapper .swiper-slide .video
   body .content .subscriptions .sub_slider .swiper-wrapper .swiper-slide .video_card .video_discription .video_info {
     bottom: 45px;
     width: 100%;
+  }
+  body .content .recomended .slider_buttons {
+    display: none;
+  }
+  body .content .recomended .rec_slider {
+    margin-bottom: 20px;
+  }
+  body .content .recomended .rec_slider .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .content .recomended .rec_slider .swiper-wrapper .swiper-slide {
+    margin-bottom: 40px;
   }
   body .content .recomended .rec_slider .swiper-wrapper .swiper-slide .video_card {
     width: 76vw;
@@ -985,8 +1040,26 @@ body .content .food_drink .fooddrink_slider .swiper-wrapper .swiper-slide .video
     bottom: 45px;
     width: 100%;
   }
+  body .content .food_drink .food_tittle .slider_buttons {
+    display: none;
+  }
   body .content .food_drink .subscribe_button {
     display: none;
+  }
+  body .content .food_drink .fooddrink_slider {
+    margin-bottom: 20px;
+  }
+  body .content .food_drink .fooddrink_slider .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .content .food_drink .fooddrink_slider .swiper-wrapper .swiper-slide {
+    margin-bottom: 40px;
   }
   body .content .food_drink .fooddrink_slider .swiper-wrapper .swiper-slide .video_card {
     width: 76vw;

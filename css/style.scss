@@ -562,12 +562,6 @@ body {
   .rightmenu{
     display: none;
   }
-  .search{
-    display: none;
-  }
-  .mobile_search{
-    display: block;
-  }
     }
     .sidebar{
       display: none;
@@ -635,6 +629,7 @@ body {
     margin-top: 5vh;
     padding-left: 15px;
     margin-left: 9vw;
+    margin-bottom: 65px;
       .subscriptions{
         .sub_slider{
           .swiper-wrapper{
@@ -651,7 +646,6 @@ body {
                 }
                 }
                }
-               
                  .video_discription{
                    .video_info{
                     bottom: 45px;
@@ -725,7 +719,7 @@ body {
     }
 }
 }
-@media (max-width: 630px) {
+@media (max-width: 640px) {
   body{
     overflow-x: hidden;
     header{
@@ -734,16 +728,39 @@ body {
     display: none;
   }
   .user{
-    margin-left: auto;
+    margin-left: 20px;
   }
   .rightmenu{
     display: none;
   }
   .search{
-    display: none;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    opacity: 0;
+    width: 67%;
+    margin-left: 25px;
+    transition: 0.2s;
+    &.is_open{
+    top: 20px;
+    opacity: 1;
+  }
   }
   .mobile_search{
     display: block;
+    margin-left: auto;
+    .button_search {
+      height: 19px;
+      width: 19px;
+      border: none;
+      background: transparent;
+      padding: 0px;
+      cursor: pointer;
+      outline:none;
+      .icon_search {
+        fill: #000;
+      }
+    }
   }
     }
     .sidebar{
@@ -813,9 +830,18 @@ body {
     padding-left: 15px;
     margin-left: 9vw;
       .subscriptions{
+        .sub_title{
+        .slider_buttons{
+          display: none;
+        }
+      }
         .sub_slider{
+          margin-bottom: 20px;
           .swiper-wrapper{
+            display: flex;
+            flex-direction: column;
             .swiper-slide{
+              margin-bottom: 40px;
               .video_card{
                 width: 76vw;
                 height: auto;
@@ -841,9 +867,16 @@ body {
         }
       }
       .recomended{
+        .slider_buttons{
+          display: none;
+        }
         .rec_slider{
-          .swiper-wrapper{
+          margin-bottom: 20px;
+          .swiper-wrapper{            
+            display: flex;
+            flex-direction: column;
             .swiper-slide{
+              margin-bottom: 40px;
               .video_card{
                 width: 76vw;
                 height: auto;
@@ -869,12 +902,21 @@ body {
         }
       }
       .food_drink{
+        .food_tittle{
+          .slider_buttons{
+            display: none;
+          }
+        }        
         .subscribe_button{
           display: none; 
         }
         .fooddrink_slider{
+          margin-bottom: 20px;
           .swiper-wrapper{
+            display: flex;
+            flex-direction: column;
             .swiper-slide{
+              margin-bottom: 40px;
               .video_card{
                 width: 76vw;
                 height: auto;
